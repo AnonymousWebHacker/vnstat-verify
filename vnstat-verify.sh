@@ -1,6 +1,7 @@
 #!/bin/bash
-# Calc limit traffic VPS
+# Calculate limit traffic VPS
 
+mail="anonymouswebhacker@protonmail.com"
 #Total Trafic
 let LimitGB=230 #Set valor on GB
 #echo "Limite de servidor: $LimitGB GB"
@@ -55,11 +56,16 @@ function outline_function {
 	#echo "systemctl disable docker";
 	#echo "systemctl disable docker.io";
 	#sleep_function;
-	exit;
+	
 }
 function sleep_function {
 	sleep $time;
 	used_function;
+}
+
+function sendmail {
+	echo "Subject: VPS Verify" | sendmail $mail
+	exit;
 }
 
 used_function;
