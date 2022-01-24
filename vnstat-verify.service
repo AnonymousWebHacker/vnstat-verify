@@ -1,0 +1,13 @@
+# vnstat-verify
+# but we are using a service since targets cannot be reloaded.
+
+[Unit]
+Description=vnstat-verify medir trafico VPS
+
+[Service]
+ExecStart=/home/jose/Documentos/vnstat-verify.sh
+ExecReload=/bin/true
+
+[Install]
+WantedBy=multi-user.target
+
