@@ -5,7 +5,7 @@
 Description=vnstat-verify medir trafico VPS
 
 [Service]
-ExecStart=/home/jose/Documentos/vnstat-verify.sh
+ExecStart=/opt/vnstat-verify/vnstat-verify.sh
 ExecReload=/bin/true
 
 [Install]
