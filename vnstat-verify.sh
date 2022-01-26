@@ -66,6 +66,11 @@ function sleep_function {
 }
 
 function sendmail {
+	if $mail=""
+	then
+		echo "No mail set"
+	fi
+	
 	echo "Subject: VPS Verify" | sendmail $mail
 	exit;
 }
