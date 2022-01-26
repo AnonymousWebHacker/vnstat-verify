@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt install bc -y
+
 #Create proyect
 mkdir /opt/vnstat-verify/
 # Check if exist folder
