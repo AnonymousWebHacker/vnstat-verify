@@ -56,7 +56,8 @@ function outline_function {
 	#echo "service docker.io stop";
 	#echo "systemctl disable docker";
 	#echo "systemctl disable docker.io";
-	sleep_function;	
+	#sleep_function;	
+	sendmail;
 }
 
 function sleep_function {
@@ -70,7 +71,7 @@ function sendmail {
 	then
 		echo "No mail set"
 	fi
-	
+
 	echo "Subject: VPS Verify" | sendmail $mail
 	exit;
 }
