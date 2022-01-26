@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install bc -y
+apt install bc sendmail-y
 
 #Create proyect
 mkdir /opt/vnstat-verify/
